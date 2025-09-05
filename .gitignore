@@ -25,11 +25,9 @@ ENV/
 # Dados locais
 # ======================
 data/bronze/*
-!data/bronze/*.csv
 data/silver/*
-!data/silver/*.csv
 data/gold/*
-!data/gold/*.csv
+.Trash-0/
 
 # Mas mantém a estrutura das pastas
 !data/bronze/.gitkeep
