@@ -27,7 +27,7 @@ ENV/
 data/bronze/*
 data/silver/*
 data/gold/*
-.Trash-0/
+*/.Trash-[0-9]/
 
 # Mas mantém a estrutura das pastas
 !data/bronze/.gitkeep
