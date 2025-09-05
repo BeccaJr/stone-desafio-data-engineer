@@ -20,14 +20,16 @@ ENV/
 # Jupyter
 # ======================
 .ipynb_checkpoints/
-*.ipynb
 
 # ======================
 # Dados locais
 # ======================
 data/bronze/*
+!data/bronze/*.csv
 data/silver/*
+!data/silver/*.csv
 data/gold/*
+!data/gold/*.csv
 
 # Mas mantém a estrutura das pastas
 !data/bronze/.gitkeep
