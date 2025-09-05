@@ -1,0 +1,33 @@
+services:
+  db:
+    image: postgres:16
+    container_name: stone_db
+    environment:
+      POSTGRES_USER: stone
+      POSTGRES_PASSWORD: stone
+      POSTGRES_DB: stone
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: stone_app
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    env_file:
+      - .env
+    depends_on:
+      - db
+    command: jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --NotebookApp.token=''
+    ports:
+      - "8888:8888"
+    dns:
+    - 8.8.8.8
+    - 8.8.4.4
+
+volumes:
+  pgdata:
+

@@ -1,0 +1,57 @@
+# ======================
+# Python
+# ======================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.egg-info/
+*.egg
+*.log
+
+# Virtualenv
+.venv/
+env/
+venv/
+ENV/
+
+# ======================
+# Jupyter
+# ======================
+.ipynb_checkpoints/
+*.ipynb
+
+# ======================
+# Dados locais
+# ======================
+data/bronze/*
+data/silver/*
+data/gold/*
+
+# Mas mantém a estrutura das pastas
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+# ======================
+# Configurações locais
+# ======================
+.env
+.env.local
+.env.*.local
+
+# ======================
+# Docker
+# ======================
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# ======================
+# Sistema
+# ======================
+.DS_Store
+Thumbs.db
+
