@@ -7,3 +7,6 @@ requests
 python-dotenv
 tqdm
 jupyterlab
+psycopg2-binary
+sqlalchemy
+python-dotenv
