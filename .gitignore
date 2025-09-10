@@ -22,14 +22,21 @@ ENV/
 .ipynb_checkpoints/
 
 # ======================
+# Apoio
+# ======================
+apoio/*.txt
+
+# ======================
 # Dados locais
 # ======================
+data/raw/*
 data/bronze/*
 data/silver/*
 data/gold/*
 */.Trash-[0-9]/
 
 # Mas mantém a estrutura das pastas
+!data/raw/.gitkeep
 !data/bronze/.gitkeep
 !data/silver/.gitkeep
 !data/gold/.gitkeep
